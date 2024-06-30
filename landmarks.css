@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Karla;
+    src: url(Karla-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+nav {
+    position: sticky;
+    background-color: #F3C263;
+    display: flex;
+    height: 95px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    z-index: 1000;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+}
+
+.topnav a {
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-family: Karla;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    text-decoration: underline;
+    transition: transform 0.7s ease-out;
+}
+
+.accounts {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+}
+
+.title {
+    font-family: Karla;
+    color: #ffffff;
+    background-image: url("header_batik.png");
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 80px;
+    padding: 1rem;
+    padding-left: 6rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 50px;
+    font-family: JostR;
+    margin-bottom: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    font-family: Karla;
+    width: 50%;
+    align-items: center;
+}
+
+.column img {
+    margin-top: 4rem;
+}
+
+.column p {
+    text-align: justify;
+    margin-left: 2.8rem;
+    margin-right: 2.8rem;
+    font-size: 18px;
+}
+
+.column h1 {
+    font-size: 75px;
+    margin-top: 6rem;
+    margin-right: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: JostR;
+    margin-bottom: 10px;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    font-family: Karla;
+    width: 50%;
+    align-items: center;
+}
+
+.column2 img {
+    margin-top: 8rem;
+}
+
+.column2 p {
+    text-align: justify;
+    margin-left: 3.5rem;
+    margin-right: 5rem;
+    font-size: 18px;
+}
+
+.column2 h1 {
+    font-size: 70px;
+    margin-top: 6rem;
+    margin-left: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.column3 {
+    display: flex;
+    flex-direction: column;
+    font-family: Karla;
+    width: 50%;
+    align-items: center;
+}
+
+.column3 img {
+    margin-top: 8rem;
+}
+
+.column3 p {
+    text-align: justify;
+    margin-left: 2.8rem;
+    margin-right: 2.6rem;
+    font-size: 18px;
+}
+
+.column3 h1 {
+    font-size: 68px;
+    margin-top: 6rem;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.row4 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: JostR;
+    margin-bottom: 10px;
+}
+
+.column4 {
+    display: flex;
+    flex-direction: column;
+    font-family: Karla;
+    width: 50%;
+    align-items: center;
+}
+
+.column4 img {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.column4 p {
+    text-align: justify;
+    margin-left: 3.5rem;
+    margin-right: 5rem;
+    font-size: 18px;
+}
+
+.column4 h1 {
+    font-size: 80px;
+    margin-top: 6rem;
+    margin-right: 5.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input[class="heartbox1"] {
+    content: url('heart.png');
+    appearance: none;
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: 0.2s;
+    margin-left: 15px;
+}
+
+input[class="heartbox1"]:checked {
+    content: url('heart_red.png');
+}
+
+input[class="heartbox2"] {
+    content: url('heart.png');
+    appearance: none;
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: 0.2s;
+    margin-right: 120px;
+    margin-bottom: 80px;
+}
+
+input[class="heartbox2"]:checked {
+    content: url('heart_red.png');
+}
+
+.rowfoot {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    font-family: Karla;
+    margin-top: 10px;
+}
+
+.columnfoot {
+    display: flex;
+    flex-direction: column;
+    font-family: Karla;
+}
+
+.policy {
+    font-family: Karla;
+    font-size: 15px;
+    background-color: #F3C263;
+    padding: 10px;
+    padding-left: 300px;
+    color: white;
+}

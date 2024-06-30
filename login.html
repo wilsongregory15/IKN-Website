@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  <title>Login IKN</title>
+</head>
+<body>
+  <div class="firstpage">
+
+    <div class="left-side">
+      <div class="item">
+        <span class="head">Login to Your Account<br></span>
+        <span class="desc">Login using social networks</span>
+        <div class="socials">
+          <a href="#" target="_blank"><img src="fb.png" alt="facebook" class="social-icon"></a>
+          <a href="#" target="_blank"><img src="gmail.png" alt="facebook" class="social-icon"></a>
+          <a href="#" target="_blank"><img src="linkedin.png" alt="facebook" class="social-icon"></a>
+        </div>
+        <div class="or">---------------------------------- OR ----------------------------------</div>
+        <form class="loginform" onsubmit="return validate()">
+          <input type="text" id="email" name="email" placeholder="Email"><br>
+          <input type="text" id="password" name="password" placeholder="Password"><br>
+          <button type="submit" class="signinbtn">SIGN IN</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <img src="batikparang.jpeg" alt="Batik Parang" style="width: 100%; height: 100%;">
+      <div class="text">
+        <span class="new">New Here?<br></span>
+        <span class="sign">Sign up and discover a great amount of new oppurtunities!</span>
+      </div>
+      <div class="signupbtn">
+        <a href="signup.html" class="signup">SIGN UP</a>
+      </div> 
+    </div>
+  </div>
+</body>
+<script src="validatelogin.js"></script>
+</html>

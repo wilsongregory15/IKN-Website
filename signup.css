@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Karla;
+    src: url(Karla-VariableFont_wght.ttf);
+}
+
+body {
+    background-image: url("batikback.png");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.firstpage {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.left-side {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side img {
+    max-width: 80%;
+    height: auto;
+}
+
+.right-side {
+    position: relative;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.rightimage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+}
+
+.text {
+    position: absolute;
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    font-family: Karla;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.socials p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-family: Karla;
+    font-weight: 400;
+    background-color: #FFDA93;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+.google img, .facebook img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.separator hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.separator span {
+    font-size: 18px;
+    color: #666;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.signup-form input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Karla;
+}
+
+.signbtn {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFDA93;
+    color: black;
+    font-family: Karla;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.signbtn:hover {
+    background-color: black;
+    color: #FFDA93;
+}

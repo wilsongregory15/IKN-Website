@@ -1,0 +1,341 @@
+*{
+  font-family: Karla;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .iknmap{
+    font-size: 13px;
+  }
+}
+
+nav {
+  position: sticky;
+  background-color: #F3C263;
+  display: flex;
+  height: 95px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  z-index: 1000;
+  top: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.logo {
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+}
+
+.container {width: 100%; margin: auto; height: auto; overflow: hidden; text-align: justify;
+  display: flex; justify-content: center;}
+.judul3 h1 {display: flex; justify-content: center;}
+.container1 {width: 100%; margin: auto; position: relative; height: auto; margin-top: 15px; display: flex; justify-content: center; overflow: hidden;}
+.container1 .products {width: auto; margin-top: 30px;  margin: auto;}
+.container1 .products .foto {width: 240px; height: auto; float: left;}
+.container1 .products .foto img {width: 240px; height: 240px; margin-bottom: 10px;}
+.container1 .products .foto p {margin-top: 4px; font-size: 15px;}
+.container1 .products .kiri .foto {margin: 20px 30px 0 0;}
+.container1 .products .kanan .foto {margin: 20px 0 30px 0;}
+
+
+.topnav a {
+  padding-right: 25px;
+  padding-left: 25px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000000;
+  font-family: Karla;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+  transition: transform 0.7s ease-out;
+}
+
+.accounts {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* .title {
+  font-family: Karla;
+  color: #ffffff;
+  background-image: url("header_batik.png");
+  font-size: 60px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 80px;
+  padding: 1rem;
+  padding-left: 6rem;
+} */
+
+/* content */
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-title{
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.title-col{
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.title-col img{
+  width: 100%;
+}
+
+.title-col h1{
+  padding-top: 0;
+  font-size: 92px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.title-col h2{
+  padding: 15px 0 5px;
+  font-weight: 800;
+  font-size: 42px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #FFBF43;
+}
+
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #FFBF43;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.hero-btn:hover{
+  /* border: 1px solid #FFBF43; */
+  background-color: black;
+  color: #FFDA93;
+  transition: 0.5s;
+}
+
+.yel-btn{
+  border: 1px solid #FFBF43;
+  background: #FFBF43;
+  color: #000000;
+}
+
+.yel-btn:hover{
+  background-color: black;
+  color: #FFDA93;
+  border: 1px solid #a76f00;
+}
+
+.map{
+  margin: 0;
+  font-weight: 800;
+  margin-bottom: 80px;
+}
+
+.iknmap{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1em;
+  position: relative;
+}
+
+.iknmap img{
+  width: 55%;
+  height: 55%;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.map-title{
+  text-align: center;
+  font-size: 52px;
+  margin: 2em 0;
+  margin-bottom: 0;
+  padding: 0 1em;
+}
+
+.pin{
+  background: #FFBF43;
+  position: absolute;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+}
+
+.pin::before{
+  content: '';
+  background: #FFBF43;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: pulse 1.3s ease-in-out infinite;
+}
+
+.pin span{
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  left: 1.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #FFBF43;
+  border-radius: 3em;
+  padding: 0.3em 0.6em;
+  font-size: 0.9em;
+}
+
+.barat{
+  top: 50%;
+  left: 42%;
+}
+
+.timur{
+  top: 37%;
+  left: 64%;
+}
+
+.kipp{
+  top: 72%;
+  left: 40%;
+}
+
+.soon1{
+  top: 85%;
+  left: 27%;
+}
+
+.soon2{
+  top: 55%;
+  left: 66%;
+}
+
+.soon3{
+  top: 19%;
+  left: 62%;
+}
+
+@keyframes pulse{
+  100%{
+    opacity: 0;
+    transform: 
+      translate(-50%,-50%)
+      scale(2.5);
+  }
+}
+
+.charttitle{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 1000;
+}
+
+.charttitle h1{
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+#popchart .legend{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#popchart .legend li:nth-child(10n+1)::before {
+  background-color: #3863D2;
+}
+
+#popchart .legend li:nth-child(10n+2)::before {
+  background-color: #99B6FF;
+}
+
+#popchart .legend li:nth-child(10n+3)::before {
+  background-color: #F7AB17;
+}
+
+#popchart{
+  width: 50%;
+  max-width: 1000px;
+  margin: 80px auto;
+  background: #FFE2A8;
+  padding: 42px;
+  border-radius: 5%;
+}
+
+#popchart .bar{
+  --labels-size: 100px;
+}
+
+#popchart .bar caption{
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.chartdesc p{
+  opacity: 55%;
+}
+
+/* #popchart .bar tbody td {
+  transform-origin: left;
+  animation: revealing-bars 2s linear infinite;
+}
+@keyframes revealing-bars {
+  0%  { transform: scaleX( 0 ); }
+  30% { transform: scaleX( 1 ); }
+} */
+
+
+.rowfoot {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  padding-bottom: 50px;
+  font-family: Karla;
+  margin-top: 10px;
+}
+
+.columnfoot {
+  display: flex;
+  flex-direction: column;
+  font-family: Karla;
+}
+
+.policy {
+  font-family: Karla;
+  font-size: 15px;
+  background-color: #F3C263;
+  padding: 10px;
+  padding-left: 300px;
+  color: white;
+}

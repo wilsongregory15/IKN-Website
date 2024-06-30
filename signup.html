@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="signup.css">
+  <title>Sign Up IKN</title>
+</head>
+<body>
+    <div class="firstpage">
+        <div class="left-side">
+            <img src="garuda.png" alt="Garuda">
+        </div>
+        <div class="right-side">
+            <img class="rightimage" src="main_cover.png" alt="Main Cover">
+            <div class="text">
+                <p>Create Account</p>
+                <div class="socials">
+                    <div class="google">
+                        <p><img src="gmail.png" alt="Google"> Sign up with Google</p>
+                    </div>
+                    <div class="facebook">
+                        <p><img src="fb.png" alt="Facebook"> Sign up with Facebook</p>
+                    </div>
+                </div>
+                <div class="separator">
+                    <hr> <span>OR</span> <hr>
+                </div>
+                <form class="signup-form" onsubmit="return validate()">
+                    <input type="text" placeholder="Full Name" id="full-name">
+                    <input type="email" placeholder="Email Address" id="email">
+                    <input type="password" placeholder="Password" id="password">
+                    <input type="password" placeholder="Confirm Password" id="cpassword">
+                    <button type="submit" class="signbtn">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="validation.js">
+</script>
+</html>
